@@ -4,7 +4,7 @@
 execute store result score #items temp run data get entity @s data.Inventory
 
 # if there is at least one item, start the process.
-execute if score #items temp matches 1.. run function zero:creative/return_item
+execute if score #items temp matches 1.. run function creative:return_item
 
 # remove entity, it served its purpose. If you want to keep it around
 # you should first copy the data and work on the copy instead.

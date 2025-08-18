@@ -10,11 +10,11 @@ data merge block ~ ~ ~ {Items:[]}
 data modify block ~ ~ ~ Items append from entity @s data.Inventory[0]
 
 # give player the item based the slot number
-execute as @a[tag=target] run function zero:creative/give_correct_slot
+execute as @a[tag=target] run function creative:give_correct_slot
 
 # remove item data from entity
 data remove entity @s data.Inventory[0]
 # count down the remaining slots
 scoreboard players remove #items temp 1
 # run the same function again if there are more items to process
-execute if score #items temp matches 1.. run function zero:creative/return_item
+execute if score #items temp matches 1.. run function creative:return_item
