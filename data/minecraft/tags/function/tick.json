@@ -1,5 +1,6 @@
 {
 	"values": [
-		"creative:core"
+		"creative:core",
+		"zero:id/core"
 	]
 }

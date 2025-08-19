@@ -3,7 +3,7 @@
 # summon marker
 summon marker ~ ~ ~ {Tags:["inv_store","inv_new"]}
 # link marker to player    
-scoreboard players operation @e[tag=inv_new] id = @s id
+scoreboard players operation @e[tag=inv_new] zero.id = @s zero.id
 # copy Inventory of player to marker data.Inventory
 data modify entity @e[tag=inv_new,limit=1] data.Inventory set from entity @s Inventory
 data modify entity @e[tag=inv_new,limit=1] data.equipment set from entity @s equipment

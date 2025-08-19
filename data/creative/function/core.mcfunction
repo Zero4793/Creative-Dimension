@@ -1,6 +1,4 @@
 #Zero_4793
-function creative:id
-
 scoreboard players enable @a creative
 scoreboard players enable @a[tag=ADMIN] admin
 
