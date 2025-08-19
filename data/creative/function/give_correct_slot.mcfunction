@@ -2,9 +2,6 @@
 
 # based on the previously stored slotnumber copy the item to the correct slot
 
-# offhand
-execute if score #slot temp matches -106 run item replace entity @s weapon.offhand from block ~ ~ ~ container.0
-
 # hotbar
 execute if score #slot temp matches 0 run item replace entity @s hotbar.0 from block ~ ~ ~ container.0
 execute if score #slot temp matches 1 run item replace entity @s hotbar.1 from block ~ ~ ~ container.0
@@ -44,9 +41,3 @@ execute if score #slot temp matches 32 run item replace entity @s inventory.23 f
 execute if score #slot temp matches 33 run item replace entity @s inventory.24 from block ~ ~ ~ container.0
 execute if score #slot temp matches 34 run item replace entity @s inventory.25 from block ~ ~ ~ container.0
 execute if score #slot temp matches 35 run item replace entity @s inventory.26 from block ~ ~ ~ container.0
-
-# armor
-execute if score #slot temp matches 100 run item replace entity @s armor.feet from block ~ ~ ~ container.0
-execute if score #slot temp matches 101 run item replace entity @s armor.legs from block ~ ~ ~ container.0
-execute if score #slot temp matches 102 run item replace entity @s armor.chest from block ~ ~ ~ container.0
-execute if score #slot temp matches 103 run item replace entity @s armor.head from block ~ ~ ~ container.0
